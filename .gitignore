@@ -1,0 +1,34 @@
+# Environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.cache/
+
+# Secrets
+.env
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# OS / editor / temp
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+*.tmp
+
+# Datasets: raw CSVs are not committed. data/train.zip is committed only if the dataset
+# licence allows redistribution - remove the exception below otherwise.
+data/*.csv
+data/*.parquet
+!data/train.zip
+
+# Large model artifacts: the current artifacts are < 1 MB and ARE committed so the app runs
+# on Streamlit Community Cloud. If you retrain much larger models, uncomment these lines and
+# see "Large model files" in the README.
+# models/*.joblib

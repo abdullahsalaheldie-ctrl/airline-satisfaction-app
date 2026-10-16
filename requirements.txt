@@ -1,0 +1,13 @@
+# Tested with Python 3.12. Model libraries are pinned because the saved .joblib models are
+# only guaranteed to load with the versions they were trained with. If you change these,
+# retrain with `python train_models.py`.
+streamlit>=1.50,<2
+pandas>=2.2
+numpy>=1.26
+plotly>=5.24
+scikit-learn==1.8.0
+xgboost==3.4.1
+lightgbm==4.7.0
+shap==0.54.1
+joblib>=1.4
+pytest>=8   # only needed to run the tests
